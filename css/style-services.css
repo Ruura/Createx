@@ -1,0 +1,209 @@
+/**************************************hero**********************************************/
+.hero-services {
+    box-sizing: border-box;
+    background-image: url("../img/services-hero-bg.png");
+    background-position: right -9px center;
+    background-repeat: no-repeat;
+    background-color: #F4F5F6; /*если вдруг не загрузится картинка,чтобы был какой то фон*/
+    padding-top: 153px;
+    padding-bottom: 179px;
+    min-height: 600px;
+}
+
+@media (max-width: 576px) {
+    .hero-services {
+        padding-top: 100px;
+        min-height: 500px;
+    }
+}
+
+.hero-services h1 {
+    font-family: 'Ubuntu', sans-serif;
+    color: #1E212C;
+    text-transform: uppercase;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+    letter-spacing: 1px;
+    margin-bottom: 23px;
+    margin-top: 40px;
+}
+
+@media (max-width: 576px) {
+    .hero-services h1 {
+        font-size: 40px;
+        line-height: 120%;
+    }
+}
+
+.hero-services .description {
+    font-family: 'Ubuntu', sans-serif;
+    color: #787A80;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 150%;
+    max-width: 600px;
+}
+
+@media (max-width: 992px) {
+    .hero-services .description {
+        color: #424551;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-services .description {
+        font-size: 16px;
+        line-height: 140%;
+    }
+}
+
+
+/**************************************services_types**********************************************/
+.services_types {
+    position: relative; /*для настройки положения картинок заднего фона*/
+    overflow: hidden; /*чтобы картинка не вылезала за пределы блока*/
+    background-color: #fff;
+    padding: 120px 0 180px 0;
+}
+
+@media (max-width: 576px) {
+    .services_types {
+        padding: 80px 0 110px 0;
+    }
+}
+
+.services_types .decorate1 {
+    position: absolute;
+    right: -9px;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-top: -134px;
+}
+
+.services_types .decorate2 {
+    position: absolute;
+    left: -8px;
+    bottom: -247px;
+}
+
+.services_types .container .services_type {
+    position: relative; /*чтобы задать z-index*/
+    z-index: 5; /*чтобы блоки сервисов были всегда выше фоновых картинок*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+}
+
+.services_types .container .services_type:not(:last-child) {
+    margin-bottom: 120px;
+}
+
+@media (max-width: 1100px) {
+    .services_types .container .services_type {
+        gap: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .services_types .container .services_type.construction, .services_types .container .services_type.design {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .services_types .container .services_type.project, .services_types .container .services_type.repairs {
+        flex-direction: column-reverse;
+    }
+}
+
+@media (max-width: 576px) {
+    .services_types .container .services_type {
+        gap: 20px;
+    }
+
+    .services_types .container .services_type:not(:last-child) {
+        margin-bottom: 80px;
+    }
+}
+
+@media (max-width: 992px) {
+    .services_types .container .services_type img {
+        width: 53%;
+    }
+}
+
+@media (max-width: 768px) {
+    .services_types .container .services_type img {
+        width: 100%;
+        max-width: 575px;
+    }
+}
+
+.services_types h3 {
+    font-family: 'Ubuntu', sans-serif;
+    color: #1E212C;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 150%;
+    margin-bottom: 26px;
+}
+
+@media (max-width: 576px) {
+    .services_types h3 {
+        font-size: 24px;
+        line-height: 140%;
+        margin-bottom: 10px;
+    }
+}
+
+.services_types p {
+    font-family: 'Ubuntu', sans-serif;
+    color: #787A80;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 160%;
+    margin-bottom: 49px;
+}
+
+@media (max-width: 576px) {
+    .services_types p {
+        margin-bottom: 20px;
+    }
+}
+
+.services_types a {
+    padding: 13px 31px;
+    border: 1px solid #FF5A30;
+    border-radius: 4px;
+    font-family: 'Ubuntu', sans-serif;
+    color: #FF5A30;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.services_types a:focus {
+    outline: none;
+}
+
+.services_types a:focus-visible {
+    outline: 2px solid #ff5a30;
+    outline-offset: 5px;
+}
+
+.services_types a:hover {
+    background-color: #ff5a30;
+    color: #fff;
+}
+
+.services_types a:active {
+    background-color: #ff5a30;
+    color: #fff;
+}

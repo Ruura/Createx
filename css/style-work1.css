@@ -1,0 +1,711 @@
+main {
+    background-color: #fff;
+}
+
+/**************************************hero-work1**********************************************/
+.hero-work1 {
+    box-sizing: border-box;
+    background-image: url("../img/work1-hero-bg.png");
+    background-position: right -9px top 48px;
+    background-repeat: no-repeat;
+    background-color: #fff; /*если вдруг не загрузится картинка,чтобы был какой то фон*/
+    padding-top: 153px;
+    min-height: 600px;
+}
+
+@media (max-width: 576px) {
+    .hero-work1 {
+        padding-top: 100px;
+        min-height: 500px;
+    }
+}
+
+.hero-work1 h1 {
+    font-family: 'Ubuntu', sans-serif;
+    color: #1E212C;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: 1px;
+    margin-bottom: 60px;
+    margin-top: 39px;
+    max-width: 600px;
+}
+
+@media (max-width: 576px) {
+    .hero-work1 h1 {
+        font-size: 35px;
+        margin-bottom: 30px;
+    }
+}
+
+.hero-work1 .swiper img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.hero-work1 .swiper {
+    width: 100%;
+}
+
+.hero-work1 .work_swiper {
+    margin-bottom: 20px;
+}
+
+.hero-work1 .work_swiper .work-btn-left {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    left: 32px;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+@media (max-width: 992px) {
+    .hero-work1 .work_swiper .work-btn-left {
+        left: 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    .hero-work1 .work_swiper .work-btn-left {
+        display: none;
+    }
+}
+
+.hero-work1 .work_swiper .work-btn-right {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    right: 32px;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+@media (max-width: 992px) {
+    .hero-work1 .work_swiper .work-btn-right {
+        right: 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    .hero-work1 .work_swiper .work-btn-right {
+        display: none;
+    }
+}
+
+@media (hover: hover) { /*при наведении на кнопку на больших экранах*/
+    .hero-work1 .work_swiper button:hover {
+        background-color: rgba(255, 255, 255, 1);
+    }
+}
+
+@media (hover: none) { /*при нажатии на кнопку на мобильных*/
+    .hero-work1 .work_swiper button:active {
+        background-color: rgba(255, 255, 255, 1);
+    }
+}
+
+.hero-work1 .work_swiper button:focus {
+    outline: none;
+}
+
+.hero-work1 .work_swiper button:focus-visible {
+    outline: 2px solid #ff5a30;
+    outline-offset: 0;
+}
+
+.hero-work1 .work_swiper button svg {
+    fill: #424551;
+    margin-top: 4px;
+}
+
+.hero-work1 .work_swiper_nav {
+    max-width: 700px;
+    margin-left: 0;
+}
+
+.hero-work1 .work_swiper_nav .swiper-slide {
+    cursor: pointer;
+    opacity: 0.6;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.hero-work1 .work_swiper_nav .swiper-slide.swiper-slide-thumb-active {
+    opacity: 1;
+}
+
+
+/**************************************project_goal**********************************************/
+.project_goal {
+    margin-top: 100px;
+}
+
+@media (max-width: 576px) {
+    .project_goal {
+        margin-top: 60px;
+    }
+}
+
+.project_goal .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .project_goal .container {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+}
+
+.project_goal .left {
+    max-width: 600px;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .project_goal .left {
+        max-width: none;
+        width: 100%;
+    }
+}
+
+.project_goal .left h2 {
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+@media (max-width: 576px) {
+    .project_goal .left h2 {
+        margin-bottom: 20px;;
+    }
+}
+
+.project_goal .left p {
+    font-family: 'Ubuntu', sans-serif;
+    color: #1E212C;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.project_goal .left p.top_text {
+    margin-bottom: 27px;
+}
+
+@media (max-width: 576px) {
+    .project_goal .left p {
+        font-size: 16px;
+    }
+
+    .project_goal .left p.top_text {
+        margin-bottom: 15px;
+    }
+}
+
+.project_goal .right {
+    box-sizing: border-box;
+    max-width: 495px;
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: 0 4px 4px -4px rgba(30, 33, 44, 0.03), 0 12px 10px -6px rgba(154, 156, 165, 0.04), 0 30px 24px -10px rgba(154, 156, 165, 0.05), 0 80px 80px -20px rgba(154, 156, 165, 0.08);
+    padding: 40px 60px;
+}
+
+@media (max-width: 992px) {
+    .project_goal .right {
+        padding: 30px 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .project_goal .right {
+        max-width: 550px;
+    }
+}
+
+@media (max-width: 576px) {
+    .project_goal .right {
+        padding: 25px 20px;
+    }
+}
+
+@media (max-width: 380px) {
+    .project_goal .right {
+        padding: 15px 5px;
+    }
+}
+
+.project_goal .right .right_item {
+    display: flex;
+    align-items: center;
+    /*gap: 33px;*/
+}
+
+@media (max-width: 768px) {
+    .project_goal .right .right_item {
+        gap: 100px;
+    }
+}
+
+@media (max-width: 450px) {
+    .project_goal .right .right_item {
+        gap: 20px;
+    }
+}
+
+.project_goal .right .right_item:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+.project_goal .right .heading {
+    width: 130.5px;
+    flex-shrink: 0; /*чтобы его ширина оставалась неизменной*/
+    font-family: 'Ubuntu', sans-serif;
+    color: #1E212C;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 163%;
+    text-transform: uppercase;
+}
+
+@media (max-width: 576px) {
+    .project_goal .right .heading {
+        width: 100px;
+    }
+}
+
+.project_goal .right .info {
+    font-family: 'Ubuntu', sans-serif;
+    color: #787A80;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 163%;
+}
+
+
+/*************************************decisions**********************************************/
+.decisions {
+    margin-top: 120px;
+    padding-top: 80px;
+    background-color: #F4F5F6;
+}
+
+@media (max-width: 576px) {
+    .decisions {
+        margin-top: 90px;
+        padding-top: 40px;
+    }
+}
+
+.decisions .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+@media (max-width: 768px) {
+    .decisions .container {
+        flex-direction: column-reverse;
+        gap: 50px;
+    }
+}
+
+@media (max-width: 576px) {
+    .decisions .container {
+        gap: 30px;
+    }
+}
+
+.decisions img {
+    position: relative;
+    z-index: 5;
+    margin-bottom: -60px;
+    border-radius: 4px;
+}
+
+@media (max-width: 992px) {
+    .decisions img {
+        width: 48%;
+    }
+}
+
+@media (max-width: 768px) {
+    .decisions img {
+        width: 100%;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.decisions .content {
+    max-width: 601px;
+    width: 100%;
+}
+
+.decisions h2 {
+    text-align: left;
+    line-height: 131%;
+    margin-bottom: 60px;
+}
+
+@media (max-width: 576px) {
+    .decisions h2 {
+        margin-bottom: 20px;
+    }
+}
+
+.decisions ul li {
+    position: relative;
+    font-family: 'Ubuntu', sans-serif;
+    color: #424551;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 157%;
+    padding-left: 37px;
+}
+
+@media (max-width: 576px) {
+    .decisions ul li {
+        padding-left: 28px;
+    }
+}
+
+.decisions ul li:not(:last-child) {
+    margin-bottom: 21px;
+}
+
+@media (max-width: 576px) {
+    .decisions ul li:not(:last-child) {
+        margin-bottom: 12px;
+    }
+}
+
+.decisions ul li::before {
+    content: "";
+    position: absolute;
+    left: 1px;
+    top: 2px;
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/decisions-check.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/****************************************projects**********************************************/
+.projects {
+    margin-top: 181px;
+    background-color: #fff;
+    margin-bottom: 120px;
+}
+
+@media (max-width: 576px) {
+    .projects {
+        margin-bottom: 80px;
+    }
+}
+
+.projects .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-bottom: 48px;
+}
+
+@media (max-width: 576px) {
+    .projects .top {
+        margin-bottom: 18px;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 380px) {
+    .projects .top {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        margin-bottom: 8px;
+    }
+}
+
+.projects .top h2 {
+    text-align: left;
+    margin-bottom: 11px;
+}
+
+@media (max-width: 380px) {
+    .projects .top h2 {
+        margin-bottom: 5px;
+    }
+}
+
+.slider_nav {
+    margin-right: -12px;
+}
+
+@media (max-width: 380px) {
+    .slider_nav {
+        margin-right: 0;
+    }
+}
+
+.slider_nav button {
+    background-color: transparent;
+    border-radius: 100%;
+    border: none;
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.slider_nav button svg {
+    fill: #424551;
+    margin-top: 3px;
+    transition: fill 0.3s ease-in-out;
+}
+
+.slider_nav .btn-left {
+    margin-right: -4px;
+}
+
+.projects .swiper {
+    height: 520px; /*прибавила велечину box-shadow*/
+    background-color: #fff;
+}
+
+@media (max-width: 1100px) {
+    .projects .swiper {
+        height: 450px;
+    }
+}
+
+@media (max-width: 576px) {
+    .projects .swiper {
+        height: 380px;
+    }
+}
+
+@media (max-width: 480px) {
+    .projects .swiper {
+        height: 460px;
+        max-width: 360px;
+    }
+}
+
+@media (max-width: 380px) {
+    .projects .swiper {
+        height: 420px;
+    }
+}
+
+.projects .swiper-slide .swiper-content {
+    background-color: #fff;
+    max-width: 390px;
+    width: 100%;
+    margin-left: 1px;
+    margin-right: 1px;
+    padding-bottom: 23px;
+    border-radius: 4px;
+    box-shadow: 0 4px 4px -4px rgba(30, 33, 44, 0.03), 0 12px 10px -6px rgba(154, 156, 165, 0.04), 0 30px 24px -10px rgba(154, 156, 165, 0.05), 0 80px 80px -20px rgba(154, 156, 165, 0.08);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.projects .swiper-slide .swiper-content:hover {
+    box-shadow: 0 4px 4px -4px rgba(30, 33, 44, 0.05), 0 12px 10px -6px rgba(154, 156, 165, 0.08), 0 30px 24px -10px rgba(154, 156, 165, 0.10), 0 80px 80px -20px rgba(154, 156, 165, 0.16);
+}
+
+.projects .swiper-slide .swiper-content img {
+    max-width: 100%;
+    height: auto;
+}
+
+.projects .swiper-slide .swiper-content .swiper-text {
+    position: relative;
+    z-index: 5;
+    background-color: #fff;
+    transition: margin-top 0.3s ease-out;
+}
+
+.projects .swiper-slide .swiper-content:hover .swiper-text {
+    margin-top: -72px;
+}
+
+.projects .swiper-slide h4 {
+    font-family: 'Ubuntu', sans-serif;
+    color: #1E212C;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 150%;
+    padding-top: 12px;
+    margin-bottom: 5px;
+}
+
+.projects .swiper-slide .swiper-content:hover h4 {
+    padding-top: 16px;
+}
+
+@media (max-width: 992px) {
+    .projects .swiper-slide h4 {
+        min-height: 60px;
+    }
+}
+
+@media (max-width: 576px) {
+    .projects .swiper-slide h4 {
+        font-size: 17px;
+        line-height: 140%;
+        min-height: 47.59px;
+    }
+}
+
+.projects .swiper-slide p {
+    font-family: 'Ubuntu', sans-serif;
+    color: #787A80;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.projects .swiper-slide a {
+    display: none;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    color: #FF5A30;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    width: 170px;
+    margin: 0 auto;
+    margin-top: 24px;
+    border-radius: 4px;
+    border: 1px solid #FF5A30;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.projects .swiper-slide .swiper-content:hover a {
+    display: block;
+}
+
+.projects .swiper-slide a:focus {
+    outline: none;
+}
+
+.projects .swiper-slide a:focus-visible {
+    outline: 2px solid #ff5a30;
+    outline-offset: 5px;
+}
+
+.projects .swiper-slide a:hover {
+    background-color: #ff5a30;
+    color: #fff;
+}
+
+.projects .swiper-slide a:active {
+    background-color: #ff5a30;
+    color: #fff;
+}
+
+.projects .all_works {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    column-gap: 40px;
+    row-gap: 15px;
+}
+
+@media (max-width: 576px) {
+    .projects .all_works {
+        row-gap: 10px;
+    }
+}
+
+.projects .all_works h3 {
+    font-family: 'Ubuntu', sans-serif;
+    color: #1E212C;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 150%;
+    text-align: center;
+}
+
+@media (max-width: 576px) {
+    .projects .all_works h3 {
+        font-size: 22px;
+        line-height: 130%;
+    }
+}
+
+.projects .all_works a {
+    position: relative;
+    z-index: 10;
+    background-color: #FF5A30;
+    border-radius: 4px;
+    padding: 0 40px;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 52px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.projects .all_works a:focus {
+    outline: none;
+}
+
+.projects .all_works a:focus-visible {
+    outline: 2px solid #ff5a30;
+    outline-offset: 5px;
+}
+
+.projects .all_works a:hover {
+    background-color: #fc3300;
+}
+
+.projects .all_works a:active {
+    background-color: #fc3300;
+}
+
+@media (max-width: 576px) {
+    .projects .all_works a {
+        font-size: 15px;
+        line-height: 47px;
+    }
+}
+

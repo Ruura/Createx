@@ -1,0 +1,474 @@
+/**************************************hero-work**********************************************/
+.hero-work {
+    box-sizing: border-box;
+    background-image: url("../img/work-hero-bg.png");
+    background-position: right -9px top;
+    background-repeat: no-repeat;
+    background-color: #F4F5F6; /*если вдруг не загрузится картинка,чтобы был какой то фон*/
+    padding-top: 153px;
+    padding-bottom: 115px;
+    min-height: 600px;
+}
+
+@media (max-width: 576px) {
+    .hero-work {
+        padding-top: 100px;
+        min-height: 500px;
+    }
+}
+
+.hero-work h1 {
+    font-family: 'Ubuntu', sans-serif;
+    color: #1E212C;
+    text-transform: uppercase;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    margin-top: 53px;
+    max-width: 600px;
+}
+
+@media (max-width: 992px) {
+    .hero-work h1 {
+        text-shadow: 
+		-0   -1px 0   #FFFFFF,
+		 0   -1px 0   #FFFFFF,
+		-0    1px 0   #FFFFFF,
+		 0    1px 0   #FFFFFF,
+		-1px -0   0   #FFFFFF,
+		 1px -0   0   #FFFFFF,
+		-1px  0   0   #FFFFFF,
+		 1px  0   0   #FFFFFF,
+		-1px -1px 0   #FFFFFF,
+		 1px -1px 0   #FFFFFF,
+		-1px  1px 0   #FFFFFF,
+		 1px  1px 0   #FFFFFF,
+		-1px -1px 0   #FFFFFF,
+		 1px -1px 0   #FFFFFF,
+		-1px  1px 0   #FFFFFF,
+		 1px  1px 0   #FFFFFF;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-work h1 {
+        font-size: 40px;
+        line-height: 120%;
+    }
+}
+
+.hero-work .description {
+    font-family: 'Ubuntu', sans-serif;
+    color: #787A80;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 150%;
+    max-width: 600px;
+}
+
+@media (max-width: 992px) {
+    .hero-work .description {
+        text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5), 2px 2px 2px rgba(66,69,81,0);
+        /*color: #424551;
+        text-shadow: 
+		-0   -0.5px 0   #FFFFFF,
+		 0   -0.5px 0   #FFFFFF,
+		-0    0.5px 0   #FFFFFF,
+		 0    0.5px 0   #FFFFFF,
+		-0.5px -0   0   #FFFFFF,
+		 0.5px -0   0   #FFFFFF,
+		-0.5px  0   0   #FFFFFF,
+        0.5px  0   0   #FFFFFF,
+		-0.5px -0.5px 0   #FFFFFF,
+        0.5px -0.5px 0   #FFFFFF,
+		-0.5px  0.5px 0   #FFFFFF,
+        0.5px  0.5px 0   #FFFFFF,
+		-0.5px -0.5px 0   #FFFFFF,
+        0.5px -0.5px 0   #FFFFFF,
+		-0.5px  0.5px 0   #FFFFFF,
+        0.5px  0.5px 0   #FFFFFF;*/
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-work .description {
+        font-size: 16px;
+        line-height: 140%;
+    }
+}
+
+
+/**************************************full_portfolio**********************************************/
+.full_portfolio {
+    position: relative;
+    margin-top: -59px;
+}
+
+.full_portfolio .portfolio_tabs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 120px;
+}
+
+@media (max-width: 992px) {
+    .full_portfolio .portfolio_tabs {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 800px) {
+    .full_portfolio .portfolio_tabs {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .full_portfolio .portfolio_tabs {
+        margin-bottom: 30px;
+    }
+}
+
+.full_portfolio .portfolio_tabs li {
+    max-width: 230px;
+    width: 100%;
+}
+
+@media (max-width: 800px) {
+    .full_portfolio .portfolio_tabs li {
+        max-width: none;
+        width: 32%;
+    }
+}
+
+@media (max-width: 576px) {
+    .full_portfolio .portfolio_tabs li {
+        width: 30%;
+    }
+}
+
+@media (max-width: 420px) {
+    .full_portfolio .portfolio_tabs li {
+        width: 48%;
+    }
+}
+
+.full_portfolio .portfolio_tabs button {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 17px;
+    background-color: #fff;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 4px 4px -4px rgba(30, 33, 44, 0.03), 0 12px 10px -6px rgba(154, 156, 165, 0.04), 0 30px 24px -10px rgba(154, 156, 165, 0.05), 0 80px 80px -20px rgba(154, 156, 165, 0.08);
+    padding: 32px 0 31.42px 0;
+    font-family: 'Ubuntu', sans-serif;
+    color: #9A9CA5;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 160%;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.full_portfolio .portfolio_tabs button:focus {
+    outline: none;
+}
+
+.full_portfolio .portfolio_tabs button:focus-visible {
+    outline: 2px solid #ff5a30;
+    outline-offset: 0;
+}
+
+.full_portfolio .portfolio_tabs button:hover {
+    color: #1e212c;
+}
+
+.full_portfolio .portfolio_tabs button:active {
+    color: #1e212c;
+}
+
+.full_portfolio .portfolio_tabs button.portfolio_tab_active {
+    color: #fff;
+    background-color: #FF5A30;
+    box-shadow: 0 4px 4px -4px rgba(30, 33, 44, 0.05), 0 12px 10px -6px rgba(255, 90, 48, 0.08), 0 26px 24px -10px rgba(255, 90, 48, 0.10), 0 60px 80px -20px rgba(255, 90, 48, 0.16);
+    pointer-events: none; /*отмена клика.если вкладка активна,то на нее уже нельзя нажать*/
+}
+
+@media (max-width: 576px) {
+    .full_portfolio .portfolio_tabs button {
+        box-sizing: border-box;
+        height: 105px;
+        padding: 0;
+        padding-top: 20px;
+        padding-left: 4px;
+        padding-right: 4px;
+        font-size: 14px;
+        line-height: 130%;
+        gap: 8px;
+    }
+}
+
+.full_portfolio .portfolio_tabs button svg {
+    fill: #FF5A30;
+    transition: fill 0.3s ease-in-out;
+    pointer-events: none; /*отмена клика.чтобы событие клика создавалось по клике на кнопку и картинка не мешала(если тыкаешь на картинку,то событие не создается)*/
+}
+
+.full_portfolio .portfolio_tabs button.portfolio_tab_active svg {
+    fill: #fff;
+}
+
+@media (max-width: 576px) {
+    .full_portfolio .portfolio_tabs button svg {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+.full_portfolio .portfolio_cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+@media (max-width: 768px) {
+    .full_portfolio .portfolio_cards {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 576px) {
+    .full_portfolio .portfolio_cards {
+        gap: 20px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 450px) {
+    .full_portfolio .portfolio_cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+.full_portfolio .portfolio_cards .portfolio_card {
+    display: none; /*по умолчанию невидимые*/
+    max-width: 390px;
+    width: 100%;
+    background-color: #fff;
+    padding-bottom: 23px;
+    border-radius: 4px;
+    box-shadow: 0 4px 4px -4px rgba(30, 33, 44, 0.03), 0 12px 10px -6px rgba(154, 156, 165, 0.04), 0 30px 24px -10px rgba(154, 156, 165, 0.05), 0 80px 80px -20px rgba(154, 156, 165, 0.08);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.full_portfolio .portfolio_cards .portfolio_card:hover {
+    box-shadow: 0 4px 4px -4px rgba(30, 33, 44, 0.05), 0 12px 10px -6px rgba(154, 156, 165, 0.08), 0 30px 24px -10px rgba(154, 156, 165, 0.10), 0 80px 80px -20px rgba(154, 156, 165, 0.16);
+}
+
+.full_portfolio .portfolio_cards .portfolio_card-visible {
+    display: block; /*для js*/
+}
+
+.full_portfolio .portfolio_cards .portfolio_card-visible_more {
+    display: block !important; /*для js. !important чтобы перебивало стили в .portfolio_card-visible*/
+}
+
+@media (max-width: 450px) {
+    .full_portfolio .portfolio_cards .portfolio_card {
+        margin: 0 auto;
+    }
+}
+
+.full_portfolio .portfolio_cards .portfolio_card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.full_portfolio .portfolio_card .card-text {
+    position: relative;
+    z-index: 5;
+    background-color: #fff;
+    /*transition: margin-top 0.3s ease-out;*/
+}
+
+.full_portfolio .portfolio_card:hover .card-text {
+    margin-top: -72px;
+}
+
+.full_portfolio .portfolio_card h4 {
+    font-family: 'Ubuntu', sans-serif;
+    color: #1E212C;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 150%;
+    padding-top: 12px;
+    margin-bottom: 5px;
+}
+
+.full_portfolio .portfolio_card:hover h4 {
+    padding-top: 16px;
+}
+
+@media (max-width: 576px) {
+    .full_portfolio .portfolio_card h4 {
+        font-size: 17px;
+        line-height: 140%;
+    }
+}
+
+.full_portfolio .portfolio_card p {
+    font-family: 'Ubuntu', sans-serif;
+    color: #787A80;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.full_portfolio .portfolio_card a {
+    display: none;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    color: #FF5A30;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    width: 170px;
+    margin: 0 auto;
+    margin-top: 24px;
+    border-radius: 4px;
+    border: 1px solid #FF5A30;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.full_portfolio .portfolio_card:hover a {
+    display: block;
+}
+
+.full_portfolio .portfolio_card a:focus {
+    outline: none;
+}
+
+.full_portfolio .portfolio_card a:focus-visible {
+    outline: 2px solid #ff5a30;
+    outline-offset: 5px;
+}
+
+.full_portfolio .portfolio_card a:hover {
+    background-color: #ff5a30;
+    color: #fff;
+}
+
+.full_portfolio .portfolio_card a:active {
+    background-color: #ff5a30;
+    color: #fff;
+}
+
+.full_portfolio .load_more {
+    width: 100%;
+    text-align: center;
+}
+
+.full_portfolio .load_more button {
+    display: inline-flex; /*для строчных эл-тов*/
+    align-items: center;
+    gap: 16px;
+    background-color: transparent;
+    border: none;
+    font-family: 'Ubuntu', sans-serif;
+    color: #424551;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 163%;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+.full_portfolio .load_more button:focus {
+    outline: none;
+}
+
+.full_portfolio .load_more button:focus-visible {
+    outline: 1px solid #ff5a30;
+    outline-offset: 5px;
+}
+
+.full_portfolio .load_more button:hover {
+    color: #ff5a30;
+}
+
+.full_portfolio .load_more button:active {
+    color: #fc3300;
+}
+
+.full_portfolio .load_more button svg {
+    fill: #424551;
+    transition: fill 0.3s ease-in-out;
+}
+
+.full_portfolio .load_more button:hover svg {
+    fill: #ff5a30;
+}
+
+.full_portfolio .load_more button:active svg {
+    fill: #fc3300;
+}
+
+
+
+/****************************************testimonials**********************************************/
+.testimonials {
+    margin-top: 97px;
+    padding-top: 0;
+    padding-bottom: 90px;
+    background-color: #fff;
+}
+
+@media (max-width: 576px) {
+    .testimonials {
+        margin-top: 50px;
+        padding-bottom: 40px;
+    }
+}
+
+.testimonials .clients {
+    margin-top: 0;
+    padding-top: 80px;
+    background-color: #F4F5F6;
+}
+
+@media (max-width: 576px) {
+    .testimonials .clients {
+        padding-top: 60px;
+    }
+}
+
+.testimonials .clients .clients_content h2 {
+    line-height: 131%;
+}
+
+.testimonials .partners {
+    margin-top: 180px;
+}
+
+@media (max-width: 576px) {
+    .testimonials .partners {
+        margin-top: 140px;
+    }
+}
+

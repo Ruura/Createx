@@ -1,0 +1,827 @@
+main {
+    background-color: #fff;
+}
+/**************************************hero-contacts**********************************************/
+.hero-contacts {
+    box-sizing: border-box;
+    background-image: url("../img/contacts-hero-bg.png");
+    background-position: right -9px top;
+    background-repeat: no-repeat;
+    background-color: #F4F5F7; /*если вдруг не загрузится картинка,чтобы был какой то фон*/
+    padding-top: 153px;
+    padding-bottom: 115px;
+    min-height: 600px;
+}
+
+@media (max-width: 992px) {
+    .hero-contacts {
+        background-position: right -250px top;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-contacts {
+        background-position: right -500px top;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-contacts {
+        padding-top: 100px;
+        min-height: 500px;
+    }
+}
+
+.hero-contacts h1 {
+    font-family: 'Ubuntu', sans-serif;
+    color: #1E212C;
+    text-transform: uppercase;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+    letter-spacing: 1px;
+    margin-bottom: 23px;
+    margin-top: 40px;
+    max-width: 600px;
+}
+
+@media (max-width: 576px) {
+    .hero-contacts h1 {
+        font-size: 40px;
+        line-height: 120%;
+    }
+}
+
+.hero-contacts .description {
+    font-family: 'Ubuntu', sans-serif;
+    color: #787A80;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 150%;
+    max-width: 600px;
+}
+
+@media (max-width: 992px) {
+    .hero-contacts .description {
+        color: #424551;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-contacts .description {
+        font-size: 16px;
+        line-height: 140%;
+    }
+}
+
+
+/**************************************contact_form**********************************************/
+.contact_form {
+    background-color: #fff;
+    margin-top: 122px;
+}
+
+@media (max-width: 576px) {
+    .contact_form {
+        margin-top: 60px;
+    }
+}
+
+.contact_form h2 {
+    margin-bottom: 23px;
+}
+
+.contact_form .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+@media (max-width: 768px) {
+    .contact_form .content {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+.contact_form .content img {
+    width: 100%;
+    max-width: 495px;
+    height: auto;
+}
+
+@media (max-width: 1150px) {
+    .contact_form .content img {
+        width: 44%;
+    }
+}
+
+@media (max-width: 880px) {
+    .contact_form .content img {
+        width: 36%;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact_form .content img {
+        width: 52%;
+    }
+}
+
+@media (max-width: 576px) {
+    .contact_form .content img {
+        width: 75%;
+    }
+}
+
+@media (max-width: 400px) {
+    .contact_form .content img {
+        width: 100%;
+    }
+}
+
+.contact_form form {
+    /*flex-shrink: 0; чтобы при сжатии экрана сжималась только картинка,форма сжиматься не будет*/
+    max-width: 600px;
+    width: 100%;
+}
+
+.contact_form form .top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 24px;
+}
+
+@media (max-width: 576px) {
+    .contact_form form .top {
+        row-gap: 12px;
+    }
+}
+
+.contact_form form .label_flex {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+@media (max-width: 576px) {
+    .contact_form form .label_flex {
+        gap: 3px;
+    }
+}
+
+.contact_form form label, .contact_form form fieldset {
+    width: 47.5%;
+}
+
+@media (max-width: 1150px) {
+    .contact_form form label, .contact_form form fieldset {
+        width: 48.5%;
+    }
+}
+
+@media (max-width: 494px) {
+    .contact_form form label, .contact_form form fieldset {
+        width: 100%;
+    }
+}
+
+.contact_form form .message {
+    width: 100%;
+}
+
+.contact_form form span {
+    font-family: 'Ubuntu', sans-serif;
+    color: #424551;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 163%;
+}
+
+.contact_form form input, .contact_form form textarea {
+    font-family: 'Ubuntu', sans-serif;
+    border-radius: 4px;
+    border: 1px solid #D7DADD;
+    background-color: #F4F5F6;
+    padding: 19px 15px 16px 15px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.contact_form form input::placeholder, .contact_form form textarea::placeholder {
+    font-family: 'Ubuntu', sans-serif;
+    color: #9A9CA5;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 160%;
+}
+
+.contact_form form input:focus, .contact_form form textarea:focus {
+    outline: none;
+    border: 1px solid rgba(255, 90, 48, 0.4);
+    box-shadow: 0 4px 4px -4px rgba(30, 33, 44, 0.03), 0 12px 10px -6px rgba(255, 90, 48, 0.04), 0 30px 24px -10px rgba(255, 90, 48, 0.05), 0 80px 80px -20px rgba(255, 90, 48, 0.08);
+}
+
+.contact_form form textarea {
+    resize: none;
+    height: 102px;
+    padding: 13px 15px 11px 15px;
+}
+
+.contact_form form .choices .choices__inner {
+    box-sizing: border-box;
+    background-color: #F4F5F6;
+    font-family: 'Ubuntu', sans-serif;
+    color: #424551;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 160%;
+    min-height: 0;
+    padding: 13px 15px 11px 15px;
+    border: 1px solid #D7DADD;
+    border-radius: 4px;
+    min-height: 52px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.contact_form form .choices.is-focused .choices__inner { /*когда поле выбора :focus*/
+    border-color: rgba(255, 90, 48, 0.4);
+    box-shadow: 0 4px 4px -4px rgba(30, 33, 44, 0.03), 0 12px 10px -6px rgba(255, 90, 48, 0.04), 0 30px 24px -10px rgba(255, 90, 48, 0.05), 0 80px 80px -20px rgba(255, 90, 48, 0.08);
+}
+
+.contact_form form .choices.is-open .choices__inner { /*когда поле выбора :focus*/
+    border-color: #D7DADD;
+    box-shadow: none;
+}
+
+.contact_form form .choices .choices__list--single {
+    padding: 0;
+}
+
+.contact_form form .choices .choices__list--single .choices__placeholder {
+    font-family: 'Ubuntu', sans-serif;
+    color: #9A9CA5;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 160%;
+    opacity: 1;
+}
+
+.contact_form form .choices[data-type*=select-one]::after {
+    border: none;
+    width: 14px;
+    height: 9px;
+    right: 18.5px;
+    background-image: url("../img/select.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: -4px;
+    /*margin-top: 0;*/
+    /*transform: translateY(-50%);*/
+    transition: transform 0.3s ease-in-out;
+}
+
+.contact_form form .choices[data-type*=select-one].is-open::after {
+    margin-top: -4px;
+    transform: rotate(180deg);
+}
+
+.contact_form form .choices .choices__list--dropdown, .contact_form form .choices .choices__list[aria-expanded] {
+    box-sizing: border-box;
+    border: 1px solid #D7DADD !important;
+    background-color: #F4F5F6 !important;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.contact_form form .choices .choices__list--dropdown .choices__item,
+.contact_form form .choices .choices__list[aria-expanded] .choices__item {
+    font-family: 'Ubuntu', sans-serif;
+    color: #424551;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 160%;
+    padding: 13px 15px 11px 15px;
+}
+
+.contact_form form .choices .choices__list--dropdown .choices__item--selectable.is-highlighted {
+    transition: background-color 0.3s ease-in-out;
+    background-color: #dbdbdb !important;
+}
+
+.contact_form form .choices .choices__list--dropdown .choices__placeholder.choices__item--selectable.is-highlighted {
+    background-color: #F4F5F6 !important;
+}
+
+.contact_form form fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact_form form fieldset legend {
+    font-family: 'Ubuntu', sans-serif;
+    color: #424551;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 163%;
+}
+
+.contact_form form fieldset .wrapper {
+    margin-top: 20px;
+}
+
+@media (max-width: 494px) {
+    .contact_form form fieldset .wrapper {
+        margin-top: 3px;
+    }
+}
+
+.contact_form form fieldset label {
+    cursor: pointer;
+}
+
+.contact_form form fieldset label:not(:last-child) {
+    margin-right: 21px;
+}
+
+@media (max-width: 1024px) {
+    .contact_form form fieldset label:not(:last-child) {
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 494px) {
+    .contact_form form fieldset label:not(:last-child) {
+        margin-right: 25px;
+    }
+}
+
+.contact_form form fieldset input[type=radio] { /*скрываем значок радиокнопки кототрый идет по умолчанию*/
+    position: absolute;
+    opacity: 0;
+}
+
+.contact_form form fieldset input[type=radio] + span {
+    position: relative;
+    display: inline-block; /*чтобы padding-left применился ко всему блоку текста, а не только к первой строке*/
+    padding-left: 28px;
+}
+
+@media (max-width: 992px) {
+    .contact_form form fieldset input[type=radio] + span {
+        padding-left: 21px;
+    }
+}
+
+.contact_form form fieldset input[type=radio] + span::before { /*наша радиокнопка*/
+    content: "";
+    display: inline-block;
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #b3b7bc;
+    background-color: #fff;
+    border-radius: 100%;
+    transition: background-image 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.contact_form form fieldset input[type=radio]:checked + span::before { /*когда радиокнопка чекнута*/
+    background-image: url("../img/radiobutton.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 8px 8px;
+    border-color: #FF5A30;
+}
+
+.contact_form form fieldset input[type=radio]:focus + span {
+    outline: none;
+}
+
+.contact_form form fieldset input[type=radio]:focus-visible + span { /*обводка*/
+    outline: 1px solid rgba(255, 90, 48, 0.4);
+    outline-offset: 1px;
+}
+
+.contact_form form .bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    gap: 10px;
+}
+
+@media (max-width: 576px) {
+    .contact_form form .bottom {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 494px) {
+    .contact_form form .bottom {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+.contact_form form .bottom label.checkbox {
+    max-width: 315px;
+    width: 100%;
+}
+
+@media (max-width: 494px) {
+    .contact_form form .bottom label.checkbox {
+        max-width: none;
+    }
+}
+
+.contact_form form .bottom input[type=checkbox] { /*скрываем значок чекбокса кототрый идет по умолчанию*/
+    position: absolute;
+    opacity: 0;
+}
+
+.contact_form form .bottom input[type=checkbox] + span {
+    position: relative;
+    display: inline-block; /*чтобы padding-left применился ко всему блоку текста, а не только к первой строке*/
+    padding-left: 28px;
+}
+
+.contact_form form .bottom input[type=checkbox] + span::before { /*наш чекбокс*/
+    content: "";
+    display: inline-block;
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #B3B7BC;
+    border-radius: 3px;
+}
+
+.contact_form form .bottom input[type=checkbox]:checked + span::before { /*когда чекбокс чекнут*/
+    background-image: url("../img/checkbox.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    background-color: #FF5A30;
+    border-color: #FF5A30;
+}
+
+.contact_form form .bottom input[type=checkbox]:focus + span {
+    outline: none;
+}
+
+.contact_form form .bottom input[type=checkbox]:focus-visible + span { /*обводка*/
+    outline: 1px solid rgba(255, 90, 48, 0.4);
+    outline-offset: 1px;
+}
+
+.contact_form form .bottom button {
+    width: 210px;
+    background-color: #FF5A30;
+    border: none;
+    border-radius: 4px;
+    font-family: 'Ubuntu', sans-serif;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 52px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.contact_form form .bottom button:focus {
+    outline: none;
+}
+
+.contact_form form .bottom button:focus-visible {
+    outline: 1px solid #ff5a30;
+    outline-offset: 5px;
+}
+
+.contact_form form .bottom button:hover {
+    background-color: #fc3300;
+}
+
+.contact_form form .bottom button:active {
+    background-color: #fc3300;
+}
+
+@media (max-width: 576px) {
+    .contact_form form .bottom button {
+        width: auto;
+        min-width: 165px;
+    }
+}
+
+@media (max-width: 494px) {
+    .contact_form form .bottom button {
+        min-width: 220px;
+    }
+}
+
+
+/**************************************contacts**********************************************/
+.contacts {
+    margin-top: 120px;
+    padding-top: 81px;
+    padding-bottom: 116px;
+    background-color: #f4f5f7;
+}
+
+@media (max-width: 576px) {
+    .contacts {
+        margin-top: 60px;
+        padding-bottom: 80px;
+    }
+}
+
+.contacts h2 {
+    margin-bottom: 23px;
+}
+
+@media (max-width: 576px) {
+    .contacts h2 {
+        margin-bottom: 15px;
+    }
+}
+
+.contacts ul {
+    display: flex;
+    justify-content: space-between;
+    /*gap: 120px;*/
+    margin-bottom: 117px;
+}
+
+@media (max-width: 992px) {
+    .contacts ul {
+        flex-wrap: wrap;
+        row-gap: 60px;
+        justify-content: space-evenly;
+    }
+}
+
+@media (max-width: 768px) {
+    .contacts ul {
+        column-gap: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .contacts ul {
+        row-gap: 25px;
+        margin-bottom: 80px;
+    }
+}
+
+@media (max-width: 440px) {
+    .contacts ul {
+        row-gap: 15px;
+    }
+}
+
+.contacts ul li {
+    max-width: 250px;
+    width: 100%;
+}
+
+@media (max-width: 992px) {
+    .contacts ul li {
+        max-width: none;
+        width: 40%;
+    }
+}
+
+@media (max-width: 768px) {
+    .contacts ul li {
+        width: 48%;
+    }
+}
+
+@media (max-width: 576px) {
+    .contacts ul li {
+        width: 46%;
+    }
+}
+
+@media (max-width: 440px) {
+    .contacts ul li {
+        width: 100%;
+        margin: 0 auto;
+        max-width: 290px;
+    }
+}
+
+.contacts ul .divider {
+    width: 1px;
+    height: 100%;
+}
+
+@media (max-width: 992px) {
+    .contacts ul .divider {
+        display: none;
+    }
+}
+
+@media (max-width: 440px) {
+    .contacts ul .divider {
+        display: inline-block;
+        width: 100%;
+        height: 1px;
+        text-align: center !important;
+    }
+      
+    .contacts ul .divider img {
+        display: inline;
+        transform: rotate(90deg) translateX(-127px);
+        margin: 0;
+    } 
+}
+
+.contacts ul h3 {
+    font-family: 'Ubuntu', sans-serif;
+    color: #1e212c;
+    font-weight: 700;
+    font-size: 28px; 
+    line-height: 150%;
+    margin-bottom: 25px;
+}
+
+@media (max-width: 576px) {
+    .contacts ul h3 {
+        font-size: 20px;
+        margin-bottom: 12px; 
+    }
+}
+
+.contacts ul address {
+    font-family: 'Ubuntu', sans-serif;
+    color: #1e212c;
+    font-weight: 400;
+    font-size: 16px; 
+    font-style: normal;
+    line-height: 162%;
+    margin-bottom: 8px;
+}
+
+@media (max-width: 576px) {
+    .contacts ul address {
+        font-size: 14px;
+        line-height: 150%;
+        margin-bottom: 5px; 
+    }
+}
+
+.contacts ul a {
+    display: inline-block;
+    font-family: 'Ubuntu', sans-serif;
+    color: #ff5a30;
+    font-weight: 400;
+    font-size: 16px; 
+    border-bottom: 1px solid #ff5a30;
+    margin-bottom: 20px;
+    transition: color 0.3s ease-in-out;
+}
+
+.contacts ul a:focus {
+    outline: none;
+}
+
+.contacts ul a:focus-visible {
+    outline: 1px solid #ff5a30;
+    outline-offset: 5px;
+}
+
+.contacts ul a:hover {
+    color: #fc3300;
+}
+
+.contacts ul a:active {
+    color: #fc3300;
+}
+
+@media (max-width: 576px) {
+    .contacts ul a {
+        font-size: 14px;
+        margin-bottom: 10px; 
+    }
+}
+
+.contacts ul p {
+    font-family: 'Ubuntu', sans-serif;
+    color: #787a80;
+    font-weight: 400;
+    font-size: 16px; 
+    line-height: 162%;
+    margin-top: 4px;
+}
+
+@media (max-width: 576px) {
+    .contacts ul p {
+        font-size: 14px;
+        line-height: 150%;
+        margin-top: 2px;
+    }
+}
+
+.contacts ul p a, .contacts ul p span {
+    font-family: 'Ubuntu', sans-serif;
+    color: #1e212c;
+    font-weight: 400;
+    font-size: 16px; 
+    line-height: 160%;
+    text-decoration: none;
+    margin-left: 1px;
+}
+
+@media (max-width: 576px) {
+    .contacts ul p a, .contacts ul p span {
+        font-size: 14px;
+        line-height: 150%;
+    }
+}
+
+.contacts ul p a {
+    margin-bottom: 0;
+    border-bottom: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.contacts ul p a:focus {
+    outline: none;
+}
+
+.contacts ul p a:focus-visible {
+    outline: 1px solid #ff5a30;
+    outline-offset: 2px;
+}
+
+.contacts ul p a:hover {
+    color: #ff5a30;
+}
+
+.contacts ul p a:active {
+    color: #fc3300;
+}
+
+.contacts ul.social {
+    max-width: 256px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 40px;
+    gap: 24px;
+    flex-wrap: nowrap;
+}
+
+@media (max-width: 576px) {
+    .contacts ul.social {
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 992px) {
+    .contacts ul.social li {
+        width: 100%;
+    }
+}
+
+.contacts ul.social a {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.contacts ul.social a svg {
+    width: 32px;
+    height: 32px;
+    fill: #787a80;
+    transition: fill 0.3s ease-in-out;
+}
+
+.contacts ul.social a.twitter:hover svg {
+    fill: #00AAEC;
+}
+
+.contacts ul.social a.youtube:hover svg {
+    fill: #FF5A30;
+}
+
+.contacts ul.social a.facebook:hover svg {
+    fill: #3B5998;
+}
+
+.contacts ul.social a.messanger:hover svg {
+    fill: #007FFF;
+}
+
+.contacts ul.social a.whatsapp:hover svg {
+    fill: #67C15E;
+}

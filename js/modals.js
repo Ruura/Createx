@@ -1,0 +1,1 @@
+const modal = new GraphModal(); //подключение плагина модального окна

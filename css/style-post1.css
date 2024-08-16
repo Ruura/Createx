@@ -1,0 +1,629 @@
+main {
+    background-color: #fff;
+}
+
+/**************************************hero-post1**********************************************/
+.hero-post1 {
+    box-sizing: border-box;
+    background-color: #F4F5F7; 
+    padding-top: 153px;
+    min-height: 600px;
+}
+
+@media (max-width: 980px) {
+    .hero-post1 {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-post1 {
+        min-height: 520px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-post1 {
+        padding-top: 100px;
+        min-height: 0;
+        margin-bottom: 0;
+        padding-bottom: 30px;
+    }
+}
+
+.hero-post1 h1 {
+    font-family: 'Ubuntu', sans-serif;
+    color: #1E212C;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: 1px;
+    margin-bottom: 49px;
+    margin-top: 39px;
+}
+
+@media (max-width: 768px) {
+    .hero-post1 h1 {
+        font-size: 46px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-post1 h1 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 470px) {
+    .hero-post1 h1 {
+        font-size: 32px;
+    }
+}
+
+.hero-post1 .bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 10px;
+}
+
+@media (max-width: 576px) {
+    .hero-post1 .bottom {
+        flex-direction: column;
+        row-gap: 10px;
+        align-items: flex-start;
+    }
+}
+
+.hero-post1 .bottom .meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 13px;
+    font-family: 'Ubuntu', sans-serif;
+    color: #787A80;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 160%;
+}
+
+@media (max-width: 576px) {
+    .hero-post1 .bottom .meta {
+        font-size: 14px;
+        line-height: 150%;
+        column-gap: 10px;
+    }
+}
+
+.hero-post1 .bottom .meta .category_news {
+    color: #FF5A30;
+    font-weight: 700;
+}
+
+.hero-post1 .bottom .meta time {
+    background-image: url(../img/clock.svg);
+    background-position: left 2px;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    padding-left: 28px;
+    margin-left: -2px;
+}
+
+.hero-post1 .bottom .meta .divider {
+    width: 1px;
+    height: 16px;
+    background-color: #787A80;
+}
+
+@media (max-width: 576px) {
+    .hero-post1 .bottom .meta .divider {
+        height: 12px;
+        margin-bottom: 2px;
+    }
+}
+
+.hero-post1 .bottom .meta .comments_news {
+    background-image: url(../img/comments-bg.svg);
+    background-position: left 2px;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    padding-left: 28px;
+    margin-left: -2px;
+}
+
+@media (max-width: 576px) {
+    .hero-post1 .bottom .meta time, .hero-post1 .bottom .meta .comments_news {
+        background-size: 16px 16px;
+        background-position: left 1px;
+        margin-left: -1px;
+        padding-left: 24px;
+    }
+}
+
+.hero-post1 .bottom .social {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 1px;
+}
+
+.hero-post1 .bottom .social li {
+    line-height: 0;
+}
+
+.hero-post1 .bottom .social a {
+    display: inline-block;
+    line-height: 0;
+}
+
+.hero-post1 .bottom .social a:focus {
+    outline: none;
+}
+
+.hero-post1 .bottom .social a:focus-visible {
+    outline: 1px solid #ff5a30;
+    outline-offset: 2px;
+}
+
+.hero-post1 .bottom .social svg {
+    fill: #787A80;
+    transition: fill 0.3s ease-in-out;
+}
+
+.hero-post1 .bottom .social a.facebook:hover svg {
+    fill: #3B5998;
+}
+
+.hero-post1 .bottom .social a.linkedin:hover svg {
+    fill: #007EBB;
+}
+
+.hero-post1 .bottom .social a.twitter:hover svg {
+    fill: #00AAEC;
+}
+
+
+/**************************************article post**********************************************/
+article.post {
+    background-color: #fff;
+}
+
+article.post img {
+    width: 100%;
+    margin-top: -79px;
+}
+
+@media (max-width: 576px) {
+    article.post img {
+        margin-top: 0;
+    }
+}
+
+article.post .wrapper {
+    max-width: 810px;
+    width: 100%;
+    margin: 76px auto 180px auto;
+}
+
+@media (max-width: 576px) {
+    article.post .wrapper {
+        margin: 30px auto 80px auto;
+    }
+}
+
+article.post .content h3 {
+    font-family: 'Ubuntu', sans-serif;
+    color: #1E212C;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 150%;
+    margin-bottom: 25px;
+}
+
+@media (max-width: 576px) {
+    article.post .content h3 {
+        font-size: 17px;
+        line-height: 146%;
+    }
+}
+
+article.post .content p {
+    font-family: 'Ubuntu', sans-serif;
+    color: #424551;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 162%;
+    margin-bottom: 26px;
+}
+
+article.post .content blockquote {
+    position: relative;
+    font-family: 'Ubuntu', sans-serif;
+    color: #1E212C;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 150%;
+    margin-bottom: 49px;
+    margin-top: 48px;
+    padding-left: 58px;
+}
+
+@media (max-width: 576px) {
+    article.post .content blockquote {
+        font-size: 17px;
+        line-height: 146%;
+        padding-left: 30px;
+        margin-bottom: 21px;
+        margin-top: 20px;
+    }
+}
+
+article.post .content blockquote::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 28px;
+    height: 20px;
+    background-image: url(../img/braces.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 576px) {
+    article.post .content blockquote::before {
+        width: 21px;
+        height: 12px;
+        background-size: 21px 12px;
+    }
+}
+
+article.post .content ul {
+    margin-top: -2px;
+    margin-bottom: 24px;
+}
+
+article.post .content ul li {
+    position: relative;
+    font-family: 'Ubuntu', sans-serif;
+    color: #424551;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 162%;
+    padding-left: 32px;
+}
+
+article.post .content ul li:not(:last-child) {
+    margin-bottom: 4px;
+}
+
+article.post .content ul li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 4px;
+    width: 16px;
+    height: 16px;
+    background-image: url(../img/decisions-check.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+article.post .share {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    margin-top: 61px;
+}
+
+@media (max-width: 576px) {
+    article.post .share {
+        margin-top: 30px;
+    }
+}
+
+article.post .share span {
+    font-family: 'Ubuntu', sans-serif;
+    color: #1E212C;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 160%;
+}
+
+article.post .share .social {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: -2px;
+}
+
+article.post .share .social li {
+    line-height: 0;
+}
+
+article.post .share .social a {
+    display: inline-block;
+    line-height: 0;
+}
+
+article.post .share .social a:focus {
+    outline: none;
+}
+
+article.post .share .social a:focus-visible {
+    outline: 1px solid #ff5a30;
+    outline-offset: 2px;
+}
+
+article.post .share .social svg {
+    fill: #787A80;
+    transition: fill 0.3s ease-in-out;
+}
+
+article.post .share .social a.facebook:hover svg {
+    fill: #3B5998;
+}
+
+article.post .share .social a.linkedin:hover svg {
+    fill: #007EBB;
+}
+
+article.post .share .social a.twitter:hover svg {
+    fill: #00AAEC;
+}
+
+article.post .comments {
+    background-color: #fff;
+    margin-top: 80px;
+}
+
+article.post .comments h2 {
+    margin-bottom: 59px;
+}
+
+@media (max-width: 576px) {
+    article.post .comments h2 {
+        margin-bottom: 35px;
+    }
+}
+
+article.post .comments .comment {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 20px;
+}
+
+article.post .comments .comment:not(:last-child) {
+    margin-bottom: 60px;
+}
+
+@media (max-width: 576px) {
+    article.post .comments .comment {
+        flex-direction: column;
+        row-gap: 15px;
+    }
+}
+
+article.post .comments .comment .left {
+    max-width: 150px;
+    width: 100%;
+}
+
+article.post .comments .comment .left h5 {
+    font-family: 'Ubuntu', sans-serif;
+    color: #1E212C;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 145%;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 576px) {
+    article.post .comments .comment .left h5 {
+        margin-bottom: 5px;
+    }
+}
+
+article.post .comments .comment .left time {
+    font-family: 'Ubuntu', sans-serif;
+    color: #787a80;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+article.post .comments .comment .right {
+    max-width: 630px;
+    width: 100%;
+}
+
+article.post .comments .comment .right p {
+    font-family: 'Ubuntu', sans-serif;
+    color: #424551;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 163%;
+    margin-bottom: 16px;
+}
+
+article.post .comments .comment .right button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: transparent;
+    border: none;
+    font-family: 'Ubuntu', sans-serif;
+    color: #787a80;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+article.post .comments .comment .right button:focus {
+    outline: none;
+}
+
+article.post .comments .comment .right button:focus-visible {
+    outline: 1px solid #ff5a30;
+    outline-offset: 2px;
+}
+
+article.post .comments .comment .right button:hover {
+    color: #ff5a30;
+}
+
+article.post .comments .comment .right button:active {
+    color: #fc3300;
+}
+
+article.post .comments .comment .right button svg {
+    fill: #787A80;
+    transition: fill 0.3s ease-in-out;
+}
+
+article.post .comments .comment .right button:hover svg {
+    fill: #ff5a30;
+}
+
+article.post .comments .comment .right button:active svg {
+    fill: #fc3300;
+}
+
+article.post .comments .comment .right p a {
+    color: #ff5a30;
+    font-weight: 700;
+    transition: color 0.3s ease-in-out;
+}
+
+article.post .comments .comment .right p a:focus {
+    outline: none;
+}
+
+article.post .comments .comment .right p a:focus-visible {
+    outline: 1px solid #ff5a30;
+    outline-offset: 2px;
+}
+
+article.post .comments .comment .right p a:hover {
+    color: #fc3300;
+}
+
+article.post .comments .comment .right p a:active {
+    color: #fc3300;
+}
+
+article.post form {
+    margin-top: 121px;
+    background-color: #fff;
+}
+
+article.post form .wrapp {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 23px;
+    margin-top: 48px;
+}
+
+@media (max-width: 480px) {
+    article.post form .wrapp {
+        margin-top: 30px;
+    }
+}
+
+article.post form .label_flex {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+article.post form .name, article.post form .email {
+    width: 48.15%;
+}
+
+@media (max-width: 480px) {
+    article.post form .name, article.post form .email {
+        width: 100%;
+    }
+}
+
+article.post form .comment {
+    width: 100%;
+    gap: 8px;
+}
+
+article.post form span {
+    font-family: 'Ubuntu', sans-serif;
+    color: #424551;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 160%;
+}
+
+article.post form input, article.post form textarea {
+    border-radius: 4px;
+    border: 1px solid #D7DADD;
+    background-color: #F4F5F6;
+    padding: 19px 15px 16px 15px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+article.post form input::placeholder, article.post form textarea::placeholder {
+    font-family: 'Ubuntu', sans-serif;
+    color: #9A9CA5;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 160%;
+}
+
+article.post form input:focus, article.post form textarea:focus {
+    outline: none;
+    border: 1px solid rgba(255, 90, 48, 0.4);
+    box-shadow: 0 4px 4px -4px rgba(30, 33, 44, 0.03), 0 12px 10px -6px rgba(255, 90, 48, 0.04), 0 30px 24px -10px rgba(255, 90, 48, 0.05), 0 80px 80px -20px rgba(255, 90, 48, 0.08);
+}
+
+article.post form textarea {
+    resize: none;
+    height: 74px;
+    padding: 13px 15px 11px 15px;
+}
+
+article.post form button {
+    width: 215px;
+    background-color: #FF5A30;
+    border: none;
+    border-radius: 4px;
+    font-family: 'Ubuntu', sans-serif;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 52px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin: 0 auto;
+    margin-top: 25px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+article.post form button:focus {
+    outline: none;
+}
+
+article.post form button:focus-visible {
+    outline: 2px solid #ff5a30;
+    outline-offset: 5px;
+}
+
+article.post form button:hover {
+    background-color: #fc3300;
+}
+
+article.post form button:active {
+    background-color: #fc3300;
+}
